@@ -1,4 +1,4 @@
-import { SiVisualstudiocode as Vsc } from "react-icons/si";
+import { BiLogoVisualStudio as Vsc } from "react-icons/bi";
 import { SiPostman as PostMan } from "react-icons/si";
 import { SiGoogledocs as Docs } from "react-icons/si";
 import { SiDatagrip as DataGrip } from "react-icons/si";

@@ -1,14 +1,12 @@
-name: Deploy Vite site to GitHub Pages (pnpm)
-
+name: Deploy Vite site to GitHub Pages
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:       # manual trigger
-
+  workflow_dispatch: 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: read          
+  pages: write           
+  id-token: write     
 
 jobs:
   build:
@@ -21,18 +19,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'        # enables built-in cache for pnpm
-
-      - name: 🔧 Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 9           # lock to a specific pnpm version
 
       - name: 📦 Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm ci            
 
       - name: 🔧 Build with Vite
-        run: pnpm run build    # dist/ is the default output
+        run: npm run build     
 
       - name: 📦 Upload build artifact
         uses: actions/upload-pages-artifact@v3
@@ -43,7 +35,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
+      name: github-pages      
       url: ${{ steps.deploy.outputs.page_url }}
     permissions:
       pages: write
