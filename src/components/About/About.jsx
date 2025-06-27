@@ -21,19 +21,19 @@ export default function About() {
         <div className="flex lg:flex-row flex-col gap-2 justify-center font-inconsolata text-2xl font-semibold">
           <a
             href="https://www.linkedin.com/in/mohamed-lafrouh-7972a82a2/"
-            className="bg-primary text-white p-3 flex flex-row items-center gap-3 hover:bg-opacity-80 duration-500 transition-all"
+            className="bg-primary text-white p-3 flex flex-row items-center gap-3 hover:bg-opacity-80 duration-500 transition-all shadow-md"
           >
             <Linkedin className="size-7" /> <span>Linkedin</span>
           </a>
           <a
-            className="bg-primary text-white p-3 flex flex-row items-center gap-3 hover:bg-opacity-80 duration-500 transition-all"
+            className="bg-primary text-white p-3 flex flex-row items-center gap-3 hover:bg-opacity-80 duration-500 transition-all shadow-md"
             href="https://github.com/Kyle-Myre"
           >
             <Github className="size-7" />
             <span>Github</span>
           </a>
           <a
-            className="bg-primary text-white p-3 flex flex-row items-center gap-3 hover:bg-opacity-80 duration-500 transition-all"
+            className="bg-primary text-white p-3 flex flex-row items-center gap-3 hover:bg-opacity-80 duration-500 transition-all shadow-md"
             href="mailto:simoarmymen9@hotmail.com"
           >
             <Mail className="size-7" /> <span>Mail</span>

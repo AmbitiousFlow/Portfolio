@@ -3,10 +3,9 @@ import { FaBars } from "react-icons/fa";
 import { IoIosSunny as Light } from "react-icons/io";
 import { IoMdMoon as Dark } from "react-icons/io";
 
-import { useState , useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
-  
   const [visible, setVisible] = useState(false);
 
   const [theme, setTheme] = useState(
@@ -24,9 +23,7 @@ export default function Navbar() {
   useEffect(() => {
     localStorage.setItem("theme", theme);
     const localTheme = localStorage.getItem("theme");
-    document
-      .querySelector("html")
-      .setAttribute("data-theme", localTheme);
+    document.querySelector("html").setAttribute("data-theme", localTheme);
   }, [theme]);
 
   const links = [

@@ -17,7 +17,7 @@ export default function Projects() {
         "Javascript",
         "JQuery",
       ],
-      link : "https://github.com/Kyle-Myre/Pole-IT",
+      link : "https://github.com/AmbitiousFlow/Pole-IT",
     },
     {
       title: "TSMS",
@@ -26,7 +26,7 @@ export default function Projects() {
 
       type: "Web Application & Admin App",
       technologies: ["Filament", "Laravel" , "Tailwind"],
-      link : "https://github.com/Kyle-Myre/TSMS",
+      link : "https://github.com/AmbitiousFlow/TSMS",
     },
     {
       title: "Inventory Managment System",
@@ -35,7 +35,7 @@ export default function Projects() {
 
       type: "Web Application & Admin App",
       technologies: ["Laravel", "Filament", "Tailwind"],
-      link : "https://github.com/Kyle-Myre/Inventory-Management-System",
+      link : "https://github.com/AmbitiousFlow/IVM",
     },
     {
       title: "Stable Diffusion UI",
@@ -44,11 +44,11 @@ export default function Projects() {
 
       type: "Web Application",
       technologies: ["Streamlit", "Hugging Face", "Pytorch"],
-      link : "https://github.com/Kyle-Myre/StableDiffusionUI",
+      link : "https://github.com/AmbitiousFlow/StableDiffusionUI",
     },
   ];
   return (
-    <section className="container my-16 mb-20">
+    <section className="container my-16 mb-20" id="projects" >
       <h1 className="text-4xl text-center font-monsterate">Projects</h1>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 md:grid-cols-1 mt-12 mb-12">
         {projects.map((project, index) => {

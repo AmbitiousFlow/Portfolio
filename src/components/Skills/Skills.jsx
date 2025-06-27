@@ -29,7 +29,7 @@ export default function Skills() {
     { name: "REST", icon: <Rest className="size-10" /> },
   ];
   return (
-    <section className="container my-16 mb-20">
+    <section className="container my-16 mb-20" id="skills" >
       <h1 className="text-4xl text-center font-monsterate">Skills</h1>
       <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-2 gap-2 mt-12 mb-12 font-inconsolata">
         {skills.map((skill, key) => {

@@ -25,7 +25,7 @@ export default function Tools() {
     { name: "Figma", icon: <Figma className="size-8" /> },
   ];
   return (
-    <section className="container my-16 mb-20">
+    <section className="container my-16 mb-20" id="tools" >
       <h1 className="text-4xl text-center font-monsterate my-16 mb-16">
         Tools
       </h1>

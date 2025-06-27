@@ -2,7 +2,7 @@ import { FaCheckCircle as Point } from "react-icons/fa";
 
 export default function Timeline() {
   return (
-    <section className="container my-16 mb-20">
+    <section className="container my-16 mb-20" id="events">
       <h1 className="text-4xl text-center font-monsterate my-16 mb-16">
         Events
       </h1>
